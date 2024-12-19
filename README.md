@@ -19,6 +19,20 @@ Covered So far..
 - Created Redux Store with userSlice
 - Implemented Sign out
 - Update Profile
+- Bug Fix: Sign up user displayName and profile picture update
+- Bug Fix: If the user is not logged in Redirect /browse to Login Page and vice-versa
+- Unsubscribed to the onAuthStateChanged callback
+- Added hardcoded values to the constants file
+- Registered TMDB API and Create an app & get the access Token
+- Get the Data from TMDB now playing movies list API (`https://api.themoviedb.org/3/movie/now_playing`)
+- Custom Hook for Now Playing Movies
+- Create movieSlice
+- Update Store with movies Data
+- Planning for MainContauiner & secondary container
+- Fetch Data for Trailer Video
+- Update Store with Trailer Video Data
+- Embedded the Yotube video and make it autoplay and mute
+- Tailwind Classes to make Main Container look awesome
 
 ### Features
 
@@ -47,7 +61,7 @@ Covered So far..
 
    ```
    ? Are you ready to proceed? Yes
-   ? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to                                                             
+   ? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to
    confirm your choices. Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
 
    === Project Setup
