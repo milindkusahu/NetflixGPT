@@ -39,6 +39,9 @@ Covered So far..
 - TMDB Image CDN URL
 - Made the Browsre page amazing with Tailwind CSS
 - usePopularMovies, useTopRatedMovies, useUpcomingMovies Custom hook
+- GPT Search Page
+- GPT Search Bar
+- Added Multi-language feature
 
 ### Features
 
@@ -46,7 +49,6 @@ Covered So far..
 
    - Sign In /Sign up Form
    - Redirect to Browse Page
-
 2. Browse (After authentication)
 
    - Header
@@ -55,7 +57,6 @@ Covered So far..
      - Title & Description
      - Movie Suggestions
        - Movie List \* N
-
 3. NetflixGPT
 
    - Search Bar
@@ -101,7 +102,6 @@ Covered So far..
    +  Firebase initialization complete!
    PS C:\Users\Milind kumar\Desktop\Netflix-GPT> firebase deploy
    ```
-
 4. Deploy command => `firebase deploy`
 
 ### Firebase is not Recognized as an Internal or External Command (Windows)

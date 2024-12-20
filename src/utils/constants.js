@@ -2,7 +2,7 @@ export const LOGO = "/logo.png";
 
 export const USER_AVATAR = "/user-avtar.png";
 
-export const BACKGROUND = "/background.jpg";
+export const BG_URL = "/background.jpg";
 
 export const API_OPTIONS = {
   method: "GET",
