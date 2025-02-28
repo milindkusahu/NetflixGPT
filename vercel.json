@@ -1,13 +1,9 @@
 {
   "version": 2,
-  "routes": [
+  "rewrites": [
     {
       "source": "/api/tmdb/:path*",
       "destination": "https://tmdb-proxy-flax.vercel.app/api/tmdb/:path*"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
   ],
   "headers": [
