@@ -23,19 +23,19 @@ const Layout = ({ children }) => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         const { uid, displayName, email, photoURL, phoneNumber } = user;
-        dispatch(addUser({
-          uid: uid,
-          displayName: displayName,
-          photoURL: photoURL,
-          email: email,
-          phoneNumber: phoneNumber
-        }));
-        // console.log('signed in')
-        dispatch(setAuthenticated(true))
+        dispatch(
+          addUser({
+            uid: uid,
+            displayName: displayName,
+            photoURL: photoURL,
+            email: email,
+            phoneNumber: phoneNumber,
+          })
+        );
+        dispatch(setAuthenticated(true));
       } else {
-        // console.log('signed out')
-        dispatch(setAuthenticated(false))
-        dispatch(removeUser())
+        dispatch(setAuthenticated(false));
+        dispatch(removeUser());
       }
     });
 
@@ -44,9 +44,13 @@ const Layout = ({ children }) => {
   }, []);
 
   const isLogged = useSelector((store) => store.authenticated);
-  if (isLogged === null) return <Spinner />
+  if (isLogged === null) return <Spinner />;
 
-  return isLogged ? <AppLayout>{children}</AppLayout> : <DefaultLayout>{children}</DefaultLayout>
-}
+  return isLogged ? (
+    <AppLayout>{children}</AppLayout>
+  ) : (
+    <DefaultLayout>{children}</DefaultLayout>
+  );
+};
 
 export default Layout;

@@ -8,11 +8,9 @@ const useFontLoader = () => {
       const font = new FontFaceObserver('Material Symbols Outlined');
       try {
         await font.load('test');
-        console.log('Font is available');
         document.body.classList.remove('no-icon');
         setFontLoaded(true);
       } catch (error) {
-        console.log('Font is not available');
         setFontLoaded(false);
       }
     };

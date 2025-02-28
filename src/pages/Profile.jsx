@@ -30,8 +30,6 @@ const Profile = () => {
         console.log("Error -->", error);
         // An error occurred
       });
-
-    console.log("Updating...");
   };
 
   return (
