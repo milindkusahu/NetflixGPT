@@ -8,12 +8,12 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_KEY,
+  apiKey: import.meta.env.FIREBASE_KEY,
   authDomain: "neflixgpt-aa358.firebaseapp.com",
   projectId: "neflixgpt-aa358",
   storageBucket: "neflixgpt-aa358.firebasestorage.app",
   messagingSenderId: "897223410326",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  appId: import.meta.env.FIREBASE_APP_ID,
   measurementId: "G-Z2TEB1DYRN",
 };
 

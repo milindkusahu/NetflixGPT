@@ -3,13 +3,13 @@ export const TMDB_OPTIONS = {
   headers: {
     "Content-Type": "application/json;charset=UTF-8",
     accept: "application/json",
-    Authorization: "Bearer " + import.meta.env.VITE_TMDB_KEY,
+    // Authorization: "Bearer " + import.meta.env.VITE_TMDB_KEY,
   },
 };
 
 export const TMDB_CDN_URL = "https://image.tmdb.org/t/p/";
 
-export const TMDB_API_URL = "https://api.themoviedb.org/3";
+export const TMDB_API_URL = "/api/tmdb";
 
 export const SHOWCASE = {
   landingPage: {
