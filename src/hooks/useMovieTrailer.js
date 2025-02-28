@@ -4,13 +4,12 @@ import { addTrailerVideo } from "../utils/moviesSlice";
 import { useDispatch } from "react-redux";
 
 const useMovieTrailer = (movieId) => {
-
   const dispatch = useDispatch();
 
   // fetch trailer video and updating the store with trailer video d
   const getMovieVideos = async () => {
     const data = await fetch(
-      `https://api.themoviedb.org/3/movie/${movieId}/videos?language=en-US`,
+      `https://tmdb-proxy-flax.vercel.app/api/tmdb/movie/${movieId}/videos?language=en-US`,
       API_OPTIONS
     );
     const json = await data.json();

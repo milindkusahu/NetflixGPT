@@ -41,7 +41,15 @@ Covered So far..
 - usePopularMovies, useTopRatedMovies, useUpcomingMovies Custom hook
 - GPT Search Page
 - GPT Search Bar
-- Added Multi-language feature
+- Multi-language feature
+- Get Open AI Api Key
+- Gpt Search API Call
+- Fetched gptMoviesSuggestions from TMDB
+- Created gptSlice added data
+- Resused Movie List component to make movie suggestion container
+- Memoization
+- Added .env file
+- Added .env file to gitignore
 
 ### Features
 

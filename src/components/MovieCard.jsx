@@ -8,5 +8,4 @@ const MovieCard = ({ posterPath }) => {
     </div>
   );
 };
-
 export default MovieCard;
