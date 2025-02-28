@@ -1,0 +1,4 @@
+/* src/styles/swiper-overrides.css */
+.swiper-slide {
+  width: 12.5rem !important;
+}
