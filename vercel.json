@@ -4,6 +4,10 @@
     {
       "source": "/api/tmdb/:path*",
       "destination": "https://tmdb-proxy-flax.vercel.app/api/tmdb/:path*"
+    },
+    {
+      "source": "/api/openai",
+      "destination": "/api/openai.js"
     }
   ],
   "headers": [
